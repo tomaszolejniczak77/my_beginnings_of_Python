@@ -1,0 +1,22 @@
+{
+  "last_invoice": {
+    "L1": 3173,
+    "L2": 6292,
+    "invoice_value": 328.09,
+    "total_consumption": 444,
+    "year": 2023,
+    "month": 11,
+    "day": 21
+  },
+  "history": [
+    {
+      "L1": 3029,
+      "L2": 5992,
+      "invoice_value": 203.29,
+      "total_consumption": 272,
+      "year": 2023,
+      "month": 9,
+      "day": 20
+    }
+  ]
+}
