@@ -6,6 +6,7 @@ import db_actions
 
 menu_is_active = True
 
+
 while menu_is_active:
     choice = menu.handle_manu()
 
@@ -39,4 +40,4 @@ while menu_is_active:
             print("Dziękujemy za skorzystanie z programu.")
 
         case _:
-            print('Niepoprawny wybór!')
+            print("Nie ma takie opcji do wyboru!")

@@ -2,6 +2,14 @@ line = "-" * 15
 empty_line = '\n'
 
 
+def check_user_choice(choice):
+    try:
+        return int(choice)
+    except ValueError:
+        print()
+        print("Nie wybrano cyfry!")
+
+
 def handle_manu():
 
     print(empty_line)
@@ -15,6 +23,6 @@ def handle_manu():
     print(f'0. Wyjście')
     print(empty_line)
 
-    user_chooice = int(input('Proszę wybrać opcję menu: '))
+    user_choice = input('Proszę wybrać opcję menu: ')
 
-    return user_chooice
+    return check_user_choice(user_choice)
