@@ -27,5 +27,5 @@ def show_consumption_menu(y, m, d, l1, l2):
         f'Średnie dzienne zużycie od ostatniej faktury: {average_current_consumption} kWh')
 
 
-def show_month_to_choose(month, year):
-    print(f'{month}, {year}')
+def show_month_to_choose(month, year, value, total):
+    print(f'{month}, {year} - {value} PLN  / {total} kWh')

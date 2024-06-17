@@ -20,7 +20,11 @@ def fetch_from_db(select, key):
 
         case 'selected_month':
             for _, month, l1, l2, value, total, y, m, d in data:
-                submenu.show_month_to_choose(month, y)
+                submenu.show_month_to_choose(month, y, value, total)
+
+            if len(data) == 0:
+                print(
+                    "Brak danych dla tego mięsiąca. Pamiętaj, że faktury są wystawiane raz na dwa miesiące!")
 
         case 'calculate_consumption':
             _, month, l1, l2, value, total, y, m, d = data[0]
